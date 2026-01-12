@@ -49,7 +49,7 @@ const App: React.FC = () => {
           Verb Academy
         </h1>
         <p className="text-slate-300 text-center max-w-2xl text-base md:text-xl font-medium leading-relaxed px-4">
-          Master the ancient treasures of language with your guardian Hedgie.
+          Master the ancient treasures of language with your guardian 'Hedgie' the hedgehog.
         </p>
       </header>
 
