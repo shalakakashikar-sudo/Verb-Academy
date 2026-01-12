@@ -69,16 +69,20 @@ const App: React.FC = () => {
         {view === 'selection' && (
           <div className="space-y-8 animate-fadeIn">
             <h2 className="text-2xl md:text-3xl font-cinzel text-amber-300 border-b-2 border-amber-500/20 pb-4 mb-6">Imperial Scrolls</h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex flex-col gap-6 max-w-3xl mx-auto">
               {LESSONS.map((lesson) => (
                 <button
                   key={lesson.id}
                   onClick={() => handleSelectLesson(lesson)}
-                  className="group relative flex items-center p-6 md:p-8 bg-slate-900/40 hover:bg-amber-500/5 border border-white/10 hover:border-amber-400 rounded-3xl transition-all duration-300 text-left shadow-lg hover:shadow-amber-400/10 h-full w-full overflow-hidden"
+                  className="group relative flex items-center p-6 md:p-8 bg-slate-900/40 hover:bg-amber-500/5 border border-white/10 hover:border-amber-400 rounded-3xl transition-all duration-300 text-left shadow-lg hover:shadow-amber-400/10 w-full overflow-hidden"
                 >
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xl md:text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors truncate">{lesson.title}</h3>
-                    <p className="text-slate-400 text-sm md:text-base mt-2 font-medium leading-relaxed line-clamp-2">{lesson.description}</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors truncate">
+                      {lesson.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm md:text-base mt-2 font-medium leading-relaxed">
+                      {lesson.description}
+                    </p>
                   </div>
                   <div className="ml-4 transform group-hover:scale-125 transition-transform duration-300 shrink-0">
                     <span className="text-3xl md:text-4xl filter drop-shadow-md">📜</span>
