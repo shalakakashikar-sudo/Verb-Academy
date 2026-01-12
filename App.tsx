@@ -132,6 +132,15 @@ const App: React.FC = () => {
           <path fill="#fbbf24" d="M0,192L60,192C120,192,240,192,360,165.3C480,139,600,85,720,80C840,75,960,117,1080,149.3C1200,181,1320,203,1380,213.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
         </svg>
       </div>
+
+      {/* Stable User Credit */}
+      <div className="fixed bottom-4 right-4 z-50 pointer-events-auto">
+        <div className="bg-slate-900/60 backdrop-blur-md px-4 py-2 rounded-full border border-amber-500/30 shadow-lg transition-all hover:border-amber-400 hover:bg-slate-900/80 group">
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-amber-500/70 group-hover:text-amber-400 transition-colors">
+            Created by <span className="text-amber-400 font-cinzel">Shalaka Kashikar</span>
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
