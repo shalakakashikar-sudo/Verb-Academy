@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { MascotMood } from '../types';
 
@@ -243,16 +244,16 @@ const HedgehogMascot: React.FC<HedgehogMascotProps> = ({ mood = 'idle', external
   const { eyes, mouth } = getFaceExpression();
 
   return (
-    <div className="relative flex flex-col items-center select-none pt-36">
+    <div className="relative flex flex-col items-center select-none pt-28 md:pt-36 w-full max-w-[280px]">
       
       {/* --- SPEECH BUBBLE --- */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 bg-white text-slate-900 p-4 rounded-3xl shadow-xl border-4 border-amber-400 text-sm font-semibold animate-float z-30 transition-all duration-300">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-56 md:w-64 bg-white text-slate-900 p-3 md:p-4 rounded-3xl shadow-xl border-4 border-amber-400 text-xs md:text-sm font-semibold animate-float z-30 transition-all duration-300">
         <p className="text-center italic font-medium leading-relaxed">"{bubbleText}"</p>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-t-[12px] border-t-white"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] md:border-l-[12px] border-l-transparent border-r-[10px] md:border-r-[12px] border-r-transparent border-t-[10px] md:border-t-white"></div>
         
         {/* Zzz Animation for Sleeping */}
         {currentMood === 'sleeping' && (
-          <div className="absolute -top-8 -right-4 text-blue-400 font-bold text-2xl animate-bounce">
+          <div className="absolute -top-6 -right-2 md:-top-8 md:-right-4 text-blue-400 font-bold text-xl md:text-2xl animate-bounce">
             Zzz...
           </div>
         )}
@@ -261,7 +262,7 @@ const HedgehogMascot: React.FC<HedgehogMascotProps> = ({ mood = 'idle', external
       {/* --- CUTE HEDGEHOG VISUALS --- */}
       <div 
         onClick={handleMascotClick}
-        className="group relative cursor-pointer transition-transform hover:scale-105 active:scale-95 duration-300 w-56 h-48"
+        className="group relative cursor-pointer transition-transform hover:scale-105 active:scale-95 duration-300 w-44 md:w-56 h-36 md:h-48"
       >
         <svg viewBox="0 0 200 170" className="w-full h-full drop-shadow-2xl overflow-visible">
           
@@ -327,7 +328,7 @@ const HedgehogMascot: React.FC<HedgehogMascotProps> = ({ mood = 'idle', external
 
       {/* Sand/Desert Plinth */}
       <div className="relative -mt-6 z-[-1]">
-         <div className="w-48 h-10 bg-amber-200 rounded-[50%] border-b-4 border-amber-300 opacity-80"></div>
+         <div className="w-32 md:w-48 h-8 md:h-10 bg-amber-200 rounded-[50%] border-b-4 border-amber-300 opacity-80"></div>
       </div>
       
       <div className="text-[10px] text-amber-600/60 font-bold uppercase tracking-widest mt-4 animate-pulse">
