@@ -54,8 +54,8 @@ const App: React.FC = () => {
       </header>
 
       <main className="w-full max-w-5xl glass-panel rounded-[2rem] md:rounded-[3rem] p-5 md:p-12 shadow-2xl relative transition-all duration-500 z-10">
-        {/* Desktop Mascot Positioning - Adjusted to stay within viewport bounds */}
-        <div className="absolute -top-20 right-0 xl:-right-8 z-20 hidden xl:block scale-100 xl:scale-110">
+        {/* Desktop Mascot Positioning - Pulled inward and adjusted top to ensure visibility */}
+        <div className="absolute -top-32 right-8 xl:right-16 z-20 hidden xl:block scale-100 xl:scale-110">
           <HedgehogMascot mood={mascotMood} externalMessage={mascotMessage} />
         </div>
         
