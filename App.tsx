@@ -43,7 +43,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden pb-24 px-4 sm:px-6 pt-12 flex flex-col items-center relative">
+    <div className="min-h-screen w-full overflow-x-hidden pb-24 px-4 sm:px-8 md:px-12 pt-12 flex flex-col items-center relative">
       <header className="w-full max-w-5xl flex flex-col items-center mb-16 relative z-10">
         <h1 className="text-4xl md:text-7xl font-cinzel text-amber-400 drop-shadow-[0_5px_15px_rgba(251,191,36,0.4)] mb-4 text-center tracking-tighter uppercase">
           Verb Academy
@@ -54,8 +54,8 @@ const App: React.FC = () => {
       </header>
 
       <main className="w-full max-w-5xl glass-panel rounded-[2rem] md:rounded-[3rem] p-5 md:p-12 shadow-2xl relative transition-all duration-500 z-10">
-        {/* Desktop Mascot Positioning */}
-        <div className="absolute -top-24 -right-12 z-20 hidden xl:block scale-110">
+        {/* Desktop Mascot Positioning - Adjusted to stay within viewport bounds */}
+        <div className="absolute -top-20 right-0 xl:-right-8 z-20 hidden xl:block scale-100 xl:scale-110">
           <HedgehogMascot mood={mascotMood} externalMessage={mascotMessage} />
         </div>
         
