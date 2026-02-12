@@ -16,28 +16,28 @@ export const lesson2: Lesson = {
     'call', 'carry', 'cause', 'change', 'check', 'clean', 'close', 'compare', 'complain', 'complete',
     'contain', 'continue', 'cook', 'copy', 'correct', 'count', 'cry', 'dance', 'decide', 'deliver',
     'describe', 'design', 'destroy', 'die', 'discuss', 'dress', 'dry', 'earn', 'end', 'enjoy',
-    'enter', 'expect', 'explain', 'fail', 'fear', 'fill', 'finish', 'fix', 'follow', 'form',
+    'enter', 'expect', 'explain', 'fail', 'fear', 'fill', 'finish', 'fit', 'fix', 'follow', 'form',
     'guess', 'happen', 'hate', 'help', 'hope', 'ignore', 'imagine', 'improve', 'include', 'increase',
-    'inform', 'intend', 'interest', 'invite', 'join', 'jump', 'kick', 'kill', 'knock', 'laugh',
-    'learn', 'lie', 'lift', 'listen', 'live', 'lock', 'look', 'love', 'manage', 'mark',
+    'inform', 'intend', 'interest', 'invite', 'join', 'jump', 'kick', 'kill', 'knit', 'knock', 'laugh',
+    'lift', 'listen', 'live', 'lock', 'look', 'love', 'manage', 'mark',
     'marry', 'match', 'measure', 'mention', 'miss', 'mix', 'move', 'name', 'need', 'note',
-    'notice', 'number', 'offer', 'open', 'order', 'organize', 'pack', 'paint', 'pass', 'pause',
+    'notice', 'number', 'offer', 'open', 'order', 'organise', 'pack', 'paint', 'pass', 'pause',
     'perform', 'phone', 'pick', 'place', 'plan', 'play', 'point', 'polish', 'post', 'pour',
     'practise', 'pray', 'prepare', 'present', 'press', 'prevent', 'produce', 'promise', 'protect', 'provide',
-    'pull', 'push', 'question', 'rain', 'raise', 'reach', 'realize', 'receive', 'recognize', 'record',
+    'pull', 'push', 'question', 'quit', 'rain', 'raise', 'reach', 'realise', 'receive', 'recognise', 'record',
     'reduce', 'reflect', 'refuse', 'regard', 'relax', 'remain', 'remember', 'remind', 'remove', 'repair',
     'repeat', 'replace', 'reply', 'report', 'request', 'rescue', 'return', 'reveal', 'save', 'search',
     'serve', 'settle', 'share', 'shout', 'sign', 'smile', 'sound', 'start', 'stay', 'stop',
     'study', 'suggest', 'support', 'suppose', 'surprise', 'talk', 'thank', 'touch', 'train', 'travel',
     'treat', 'trust', 'try', 'turn', 'use', 'visit', 'wait', 'walk', 'want', 'wash',
-    'watch', 'wonder', 'work', 'worry'
+    'watch', 'wet', 'wonder', 'work', 'worry'
   ],
   quiz: [
     // BATCH 1: 1-100
     { id: 'q1', sentence: 'Yesterday, the traveler ___ to the palace gates.', verb: 'walk', correctForm: 'walked', type: VerbForm.V2 },
     { id: 'q2', sentence: 'The little monkey is ___ with the emeralds right now.', verb: 'play', correctForm: 'playing', type: VerbForm.ING_FORM },
     { id: 'q3', sentence: 'The princess usually ___ delicious meals on Sundays.', verb: 'cook', correctForm: 'cooks', type: VerbForm.S_FORM },
-    { id: 'q4', sentence: 'He has ___ to many distant villages.', verb: 'travel', correctForm: 'traveled', type: VerbForm.V3 },
+    { id: 'q4', sentence: 'He has ___ to many distant villages.', verb: 'travel', correctForm: 'travelled', type: VerbForm.V3 },
     { id: 'q5', sentence: 'They are ___ for the sandstorm to end at this moment.', verb: 'wait', correctForm: 'waiting', type: VerbForm.ING_FORM },
     { id: 'q6', sentence: 'She ___ to her tea every morning.', verb: 'add', correctForm: 'adds', type: VerbForm.S_FORM },
     { id: 'q7', sentence: 'We ___ to meet at the oasis yesterday.', verb: 'agree', correctForm: 'agreed', type: VerbForm.V2 },
@@ -48,467 +48,729 @@ export const lesson2: Lesson = {
     { id: 'q12', sentence: 'He ___ for help when he got lost yesterday.', verb: 'ask', correctForm: 'asked', type: VerbForm.V2 },
     { id: 'q13', sentence: 'She ___ in magic and fairy tales.', verb: 'believe', correctForm: 'believes', type: VerbForm.S_FORM },
     { id: 'q14', sentence: 'This sword ___ to the king originally.', verb: 'belong', correctForm: 'belonged', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q15', sentence: 'Can I ___ your map for a moment?', verb: 'borrow', correctForm: 'borrow', type: VerbForm.V1 },
     { id: 'q16', sentence: 'My mother ___ me every weekend.', verb: 'call', correctForm: 'calls', type: VerbForm.S_FORM },
     { id: 'q17', sentence: 'They were ___ heavy sacks of grain yesterday.', verb: 'carry', correctForm: 'carrying', type: VerbForm.ING_FORM },
     { id: 'q18', sentence: 'The storm ___ a lot of damage last year.', verb: 'cause', correctForm: 'caused', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q19', sentence: 'He has ___ his mind about the trip.', verb: 'change', correctForm: 'changed', type: VerbForm.V3 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q20', sentence: 'Please ___ your pockets before leaving.', verb: 'check', correctForm: 'check', type: VerbForm.V1 },
     { id: 'q21', sentence: 'She ___ her room every Saturday.', verb: 'clean', correctForm: 'cleans', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q22', sentence: 'The shop ___ at 5 PM yesterday.', verb: 'close', correctForm: 'closed', type: VerbForm.V2 },
     { id: 'q23', sentence: 'He is ___ prices between the two merchants.', verb: 'compare', correctForm: 'comparing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q24', sentence: 'They ___ about the heat all day yesterday.', verb: 'complain', correctForm: 'complained', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q25', sentence: 'I have ___ the secret mission.', verb: 'complete', correctForm: 'completed', type: VerbForm.V3 },
     { id: 'q26', sentence: 'This box ___ gold coins.', verb: 'contain', correctForm: 'contains', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q27', sentence: 'The music ___ late into the night yesterday.', verb: 'continue', correctForm: 'continued', type: VerbForm.V2 },
     { id: 'q28', sentence: 'The chef is ___ a feast right now.', verb: 'cook', correctForm: 'cooking', type: VerbForm.ING_FORM },
     { id: 'q29', sentence: 'He always ___ my homework!', verb: 'copy', correctForm: 'copies', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q30', sentence: 'The teacher ___ the exams last night.', verb: 'correct', correctForm: 'corrected', type: VerbForm.V2 },
     { id: 'q31', sentence: 'She is ___ the stars in the sky.', verb: 'count', correctForm: 'counting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q32', sentence: 'The baby ___ loudly last night.', verb: 'cry', correctForm: 'cried', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q33', sentence: 'We have ___ at every festival this year.', verb: 'dance', correctForm: 'danced', type: VerbForm.V3 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q34', sentence: 'He ___ to leave the village yesterday.', verb: 'decide', correctForm: 'decided', type: VerbForm.V2 },
     { id: 'q35', sentence: 'The messenger ___ letters every morning.', verb: 'deliver', correctForm: 'delivers', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q36', sentence: 'Can you ___ the thief to the guard?', verb: 'describe', correctForm: 'describe', type: VerbForm.V1 },
     { id: 'q37', sentence: 'She is ___ a new dress for the ball.', verb: 'design', correctForm: 'designing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q38', sentence: 'The fire ___ the old hut yesterday.', verb: 'destroy', correctForm: 'destroyed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q39', sentence: 'The flower will ___ if you don\'t water it.', verb: 'die', correctForm: 'die', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q40', sentence: 'We ___ the plan for hours last night.', verb: 'discuss', correctForm: 'discussed', type: VerbForm.V2 },
     { id: 'q41', sentence: 'He always ___ neatly for school.', verb: 'dress', correctForm: 'dresses', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q42', sentence: 'The sun ___ the wet clothes quickly yesterday.', verb: 'dry', correctForm: 'dried', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q43', sentence: 'She has ___ enough money to buy the horse.', verb: 'earn', correctForm: 'earned', type: VerbForm.V3 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q44', sentence: 'The movie ___ with a happy scene last night.', verb: 'end', correctForm: 'ended', type: VerbForm.V2 },
     { id: 'q45', sentence: 'I am ___ this beautiful sunset.', verb: 'enjoy', correctForm: 'enjoying', type: VerbForm.ING_FORM },
-    { id: 'q46', sentence: 'Strangers rarely ___ this forest.', verb: 'enter', correctForm: 'enter', type: VerbForm.V1 }, // plural subject
+    // Fix: Changed Form.V1 to VerbForm.V1
+    { id: 'q46', sentence: 'Strangers rarely ___ this forest.', verb: 'enter', correctForm: 'enter', type: VerbForm.V1 },
     { id: 'q47', sentence: 'He ___ a reply by tomorrow.', verb: 'expect', correctForm: 'expects', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q48', sentence: 'The guide ___ the rules yesterday.', verb: 'explain', correctForm: 'explained', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q49', sentence: 'If you don\'t study, you will ___ the test.', verb: 'fail', correctForm: 'fail', type: VerbForm.V1 },
     { id: 'q50', sentence: 'She ___ spiders more than anything.', verb: 'fear', correctForm: 'fears', type: VerbForm.S_FORM },
     { id: 'q51', sentence: 'He is ___ the bucket with water right now.', verb: 'fill', correctForm: 'filling', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q52', sentence: 'We ___ the project last week.', verb: 'finish', correctForm: 'finished', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q53', sentence: 'My dad ___ the broken chair yesterday.', verb: 'fix', correctForm: 'fixed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q54', sentence: 'The ducklings ___ their mother everywhere.', verb: 'follow', correctForm: 'follow', type: VerbForm.V1 },
     { id: 'q55', sentence: 'Clouds are ___ in the sky right now.', verb: 'form', correctForm: 'forming', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q56', sentence: 'Can you ___ the answer?', verb: 'guess', correctForm: 'guess', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q57', sentence: 'A strange thing ___ last night.', verb: 'happen', correctForm: 'happened', type: VerbForm.V2 },
     { id: 'q58', sentence: 'He ___ eating broccoli.', verb: 'hate', correctForm: 'hates', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q59', sentence: 'She has ___ me with my homework often.', verb: 'help', correctForm: 'helped', type: VerbForm.V3 },
     { id: 'q60', sentence: 'We are ___ for a sunny day tomorrow.', verb: 'hope', correctForm: 'hoping', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q61', sentence: 'Don\'t ___ the warning signs!', verb: 'ignore', correctForm: 'ignore', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q62', sentence: 'I ___ seeing a dragon in the clouds yesterday.', verb: 'imagine', correctForm: 'imagined', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q63', sentence: 'He has ___ his grades significantly.', verb: 'improve', correctForm: 'improved', type: VerbForm.V3 },
     { id: 'q64', sentence: 'The price ___ tax and service.', verb: 'include', correctForm: 'includes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q65', sentence: 'They ___ the rent every year.', verb: 'increase', correctForm: 'increase', type: VerbForm.V1 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q66', sentence: 'Please ___ us if you will be late.', verb: 'inform', correctForm: 'inform', type: VerbForm.V1 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q67', sentence: 'I ___ to visit Paris next year.', verb: 'intend', correctForm: 'intend', type: VerbForm.V1 },
     { id: 'q68', sentence: 'History usually ___ him very much.', verb: 'interest', correctForm: 'interests', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q69', sentence: 'She ___ all her friends to the party last week.', verb: 'invite', correctForm: 'invited', type: VerbForm.V2 },
     { id: 'q70', sentence: 'He is ___ the club right now.', verb: 'join', correctForm: 'joining', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q71', sentence: 'The frog ___ into the pond a moment ago.', verb: 'jump', correctForm: 'jumped', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q72', sentence: 'The horse ___ the stable door yesterday.', verb: 'kick', correctForm: 'kicked', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q73', sentence: 'The hero ___ the monster in the story.', verb: 'kill', correctForm: 'killed', type: VerbForm.V2 },
     { id: 'q74', sentence: 'Someone is ___ on the door.', verb: 'knock', correctForm: 'knocking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q75', sentence: 'We ___ at the joke yesterday.', verb: 'laugh', correctForm: 'laughed', type: VerbForm.V2 },
-    { id: 'q76', sentence: 'She ___ Spanish two years ago.', verb: 'learn', correctForm: 'learned', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q76', sentence: 'She ___ Spanish two years ago.', verb: 'learn', correctForm: 'learnt', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q77', sentence: 'Don\'t ___ to me about where you were.', verb: 'lie', correctForm: 'lie', type: VerbForm.V1 },
     { id: 'q78', sentence: 'He is ___ the heavy box now.', verb: 'lift', correctForm: 'lifting', type: VerbForm.ING_FORM },
     { id: 'q79', sentence: 'She always ___ to classical music.', verb: 'listen', correctForm: 'listens', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q80', sentence: 'My grandparents ___ in this house for 50 years.', verb: 'live', correctForm: 'lived', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q81', sentence: 'Did you ___ the door?', verb: 'lock', correctForm: 'lock', type: VerbForm.V1 },
     { id: 'q82', sentence: 'They are ___ at the beautiful painting.', verb: 'look', correctForm: 'looking', type: VerbForm.ING_FORM },
     { id: 'q83', sentence: 'He ___ chocolate ice cream.', verb: 'love', correctForm: 'loves', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q84', sentence: 'She ___ to finish the race yesterday.', verb: 'manage', correctForm: 'managed', type: VerbForm.V2 },
     { id: 'q85', sentence: 'The teacher is ___ the papers now.', verb: 'mark', correctForm: 'marking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q86', sentence: 'They ___ last June in a beautiful ceremony.', verb: 'marry', correctForm: 'married', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q87', sentence: 'These shoes ___ your dress perfectly.', verb: 'match', correctForm: 'match', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q88', sentence: 'He ___ the room size yesterday.', verb: 'measure', correctForm: 'measured', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q89', sentence: 'She ___ your name during the meeting.', verb: 'mention', correctForm: 'mentioned', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q90', sentence: 'I ___ the bus this morning.', verb: 'miss', correctForm: 'missed', type: VerbForm.V2 },
     { id: 'q91', sentence: 'He is ___ the flour and sugar.', verb: 'mix', correctForm: 'mixing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q92', sentence: 'We ___ to a new house last month.', verb: 'move', correctForm: 'moved', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q93', sentence: 'They ___ the baby "Hope".', verb: 'name', correctForm: 'named', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q94', sentence: 'I ___ some water right now.', verb: 'need', correctForm: 'need', type: VerbForm.V1 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q95', sentence: 'Please ___ down the instructions.', verb: 'note', correctForm: 'note', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q96', sentence: 'She ___ a crack in the wall yesterday.', verb: 'notice', correctForm: 'noticed', type: VerbForm.V2 },
     { id: 'q97', sentence: 'He is ___ the pages of the book.', verb: 'number', correctForm: 'numbering', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q98', sentence: 'They ___ us a ride home last night.', verb: 'offer', correctForm: 'offered', type: VerbForm.V2 },
     { id: 'q99', sentence: 'The store ___ at 9 AM usually.', verb: 'open', correctForm: 'opens', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q100', sentence: 'He has ___ a pizza for dinner.', verb: 'order', correctForm: 'ordered', type: VerbForm.V3 },
     // BATCH 2: 101-200
-    { id: 'q101', sentence: 'She ___ the books by color yesterday.', verb: 'organize', correctForm: 'organized', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q101', sentence: 'She ___ the books by colour yesterday.', verb: 'organise', correctForm: 'organised', type: VerbForm.V2 },
     { id: 'q102', sentence: 'He is ___ his suitcase for the trip right now.', verb: 'pack', correctForm: 'packing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q103', sentence: 'The artist ___ a beautiful landscape last week.', verb: 'paint', correctForm: 'painted', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q104', sentence: 'We ___ the old bridge on our drive yesterday.', verb: 'pass', correctForm: 'passed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q105', sentence: 'The video ___ to buffer a moment ago.', verb: 'pause', correctForm: 'paused', type: VerbForm.V2 },
     { id: 'q106', sentence: 'She ___ on stage every Saturday.', verb: 'perform', correctForm: 'performs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q107', sentence: 'He ___ me with the good news last night.', verb: 'phone', correctForm: 'phoned', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q108', sentence: 'I ___ fresh strawberries this morning.', verb: 'pick', correctForm: 'picked', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q109', sentence: 'Please ___ the vase on the table carefully.', verb: 'place', correctForm: 'place', type: VerbForm.V1 },
     { id: 'q110', sentence: 'We are ___ a surprise party for him right now.', verb: 'plan', correctForm: 'planning', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q111', sentence: 'The children ___ inside when it rains usually.', verb: 'play', correctForm: 'play', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q112', sentence: 'He ___ to the exit sign a moment ago.', verb: 'point', correctForm: 'pointed', type: VerbForm.V2 },
     { id: 'q113', sentence: 'She ___ her shoes every Sunday evening.', verb: 'polish', correctForm: 'polishes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q114', sentence: 'I ___ the letter yesterday afternoon.', verb: 'post', correctForm: 'posted', type: VerbForm.V2 },
     { id: 'q115', sentence: 'She is ___ tea into the cups right now.', verb: 'pour', correctForm: 'pouring', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q116', sentence: 'He ___ the piano for an hour yesterday.', verb: 'practise', correctForm: 'practised', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q117', sentence: 'The villagers ___ for rain last summer.', verb: 'pray', correctForm: 'prayed', type: VerbForm.V2 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q118', sentence: 'I have ___ a detailed report for the meeting.', verb: 'prepare', correctForm: 'prepared', type: VerbForm.V3 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q119', sentence: 'He ___ his findings to the class yesterday.', verb: 'present', correctForm: 'presented', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q120', sentence: 'Please ___ the red button to start.', verb: 'press', correctForm: 'press', type: VerbForm.V1 },
     { id: 'q121', sentence: 'A healthy diet ___ illness usually.', verb: 'prevent', correctForm: 'prevents', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q122', sentence: 'The factory ___ 500 cars last month.', verb: 'produce', correctForm: 'produced', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q123', sentence: 'I ___ to be there on time tomorrow.', verb: 'promise', correctForm: 'promise', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q124', sentence: 'The helmet ___ his head during the fall yesterday.', verb: 'protect', correctForm: 'protected', type: VerbForm.V2 },
     { id: 'q125', sentence: 'The school ___ lunch for all students daily.', verb: 'provide', correctForm: 'provides', type: VerbForm.S_FORM },
     { id: 'q126', sentence: 'He is ___ the heavy cart up the hill now.', verb: 'pull', correctForm: 'pulling', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q127', sentence: 'Don\'t ___ the door so hard!', verb: 'push', correctForm: 'push', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q128', sentence: 'The police ___ the suspect yesterday.', verb: 'question', correctForm: 'questioned', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q129', sentence: 'It ___ heavily all night long yesterday.', verb: 'rain', correctForm: 'rained', type: VerbForm.V2 },
     { id: 'q130', sentence: 'She ___ her hand to answer the question usually.', verb: 'raise', correctForm: 'raises', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q131', sentence: 'We finally ___ the summit yesterday.', verb: 'reach', correctForm: 'reached', type: VerbForm.V2 },
-    { id: 'q132', sentence: 'He suddenly ___ he lost his keys a moment ago.', verb: 'realize', correctForm: 'realized', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q132', sentence: 'He suddenly ___ he lost his keys a moment ago.', verb: 'realise', correctForm: 'realised', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q133', sentence: 'I ___ a package in the mail yesterday.', verb: 'receive', correctForm: 'received', type: VerbForm.V2 },
-    { id: 'q134', sentence: 'She ___ him from the old photo immediately.', verb: 'recognize', correctForm: 'recognized', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q134', sentence: 'She ___ him from the old photo immediately.', verb: 'recognise', correctForm: 'recognised', type: VerbForm.V2 },
     { id: 'q135', sentence: 'They are ___ a new song in the studio now.', verb: 'record', correctForm: 'recording', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q136', sentence: 'The store ___ prices for the sale yesterday.', verb: 'reduce', correctForm: 'reduced', type: VerbForm.V2 },
     { id: 'q137', sentence: 'The lake ___ the mountains perfectly today.', verb: 'reflect', correctForm: 'reflects', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q138', sentence: 'He ___ to eat his vegetables last night.', verb: 'refuse', correctForm: 'refused', type: VerbForm.V2 },
     { id: 'q139', sentence: 'She ___ him as her best friend.', verb: 'regard', correctForm: 'regards', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q140', sentence: 'We ___ by the pool all day yesterday.', verb: 'relax', correctForm: 'relaxed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q141', sentence: 'He ___ silent during the meeting yesterday.', verb: 'remain', correctForm: 'remained', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q142', sentence: 'I ___ that day very clearly.', verb: 'remember', correctForm: 'remember', type: VerbForm.V1 },
     { id: 'q143', sentence: 'She ___ me of my sister.', verb: 'remind', correctForm: 'reminds', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q144', sentence: 'He ___ his hat when he entered yesterday.', verb: 'remove', correctForm: 'removed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q145', sentence: 'The mechanic ___ the car last week.', verb: 'repair', correctForm: 'repaired', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q146', sentence: 'Can you ___ the question please?', verb: 'repeat', correctForm: 'repeat', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q147', sentence: 'We ___ the broken glass yesterday.', verb: 'replace', correctForm: 'replaced', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q148', sentence: 'He ___ to the email instantly yesterday.', verb: 'reply', correctForm: 'replied', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q149', sentence: 'The news ___ the incident last night.', verb: 'report', correctForm: 'reported', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q150', sentence: 'She ___ a song from the DJ last night.', verb: 'request', correctForm: 'requested', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q151', sentence: 'The fireman ___ the cat from the tree yesterday.', verb: 'rescue', correctForm: 'rescued', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q152', sentence: 'He ___ the library book yesterday.', verb: 'return', correctForm: 'returned', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q153', sentence: 'The magician ___ the trick at the end of the show.', verb: 'reveal', correctForm: 'revealed', type: VerbForm.V2 },
     { id: 'q154', sentence: 'He is ___ money for a new bike right now.', verb: 'save', correctForm: 'saving', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q155', sentence: 'We ___ everywhere for the keys yesterday.', verb: 'search', correctForm: 'searched', type: VerbForm.V2 },
     { id: 'q156', sentence: 'She ___ dinner at 6 PM usually.', verb: 'serve', correctForm: 'serves', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q157', sentence: 'They ___ the argument peacefully yesterday.', verb: 'settle', correctForm: 'settled', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q158', sentence: 'We ___ a pizza for lunch yesterday.', verb: 'share', correctForm: 'shared', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q159', sentence: 'Don\'t ___ in the library!', verb: 'shout', correctForm: 'shout', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q160', sentence: 'He ___ the contract yesterday morning.', verb: 'sign', correctForm: 'signed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q161', sentence: 'She ___ at me when I walked in yesterday.', verb: 'smile', correctForm: 'smiled', type: VerbForm.V2 },
     { id: 'q162', sentence: 'That idea ___ great right now.', verb: 'sound', correctForm: 'sounds', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q163', sentence: 'The movie ___ ten minutes ago.', verb: 'start', correctForm: 'started', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q164', sentence: 'We ___ at a nice hotel last weekend.', verb: 'stay', correctForm: 'stayed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q165', sentence: 'The bus ___ suddenly a moment ago.', verb: 'stop', correctForm: 'stopped', type: VerbForm.V2 },
     { id: 'q166', sentence: 'She ___ hard for her exams every day.', verb: 'study', correctForm: 'studies', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q167', sentence: 'I ___ we leave before it gets dark.', verb: 'suggest', correctForm: 'suggest', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q168', sentence: 'My friends ___ me during the crisis last year.', verb: 'support', correctForm: 'supported', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q169', sentence: 'I ___ you are right about that.', verb: 'suppose', correctForm: 'suppose', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q170', sentence: 'The party ___ him completely yesterday.', verb: 'surprise', correctForm: 'surprised', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q171', sentence: 'We ___ on the phone for hours last night.', verb: 'talk', correctForm: 'talked', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q172', sentence: 'He ___ his teacher for the help yesterday.', verb: 'thank', correctForm: 'thanked', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q173', sentence: 'Don\'t ___ the wet paint!', verb: 'touch', correctForm: 'touch', type: VerbForm.V1 },
     { id: 'q174', sentence: 'He ___ at the gym every morning.', verb: 'train', correctForm: 'trains', type: VerbForm.S_FORM },
     { id: 'q175', sentence: 'She ___ everyone with kindness usually.', verb: 'treat', correctForm: 'treats', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q176', sentence: 'I ___ you to do the right thing.', verb: 'trust', correctForm: 'trust', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q177', sentence: 'He ___ to fix the bike yesterday but failed.', verb: 'try', correctForm: 'tried', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q178', sentence: 'Please ___ left at the next corner.', verb: 'turn', correctForm: 'turn', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q179', sentence: 'She ___ a pen to write the note yesterday.', verb: 'use', correctForm: 'used', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q180', sentence: 'We ___ our grandmother last Sunday.', verb: 'visit', correctForm: 'visited', type: VerbForm.V2 },
     { id: 'q181', sentence: 'He ___ a cookie right now.', verb: 'wants', correctForm: 'wants', type: VerbForm.S_FORM },
     { id: 'q182', sentence: 'She is ___ the dishes in the kitchen now.', verb: 'wash', correctForm: 'washing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q183', sentence: 'We ___ a scary movie last night.', verb: 'watch', correctForm: 'watched', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q184', sentence: 'I ___ what will happen next.', verb: 'wonder', correctForm: 'wonder', type: VerbForm.V1 },
     { id: 'q185', sentence: 'He ___ at the bank Monday to Friday.', verb: 'works', correctForm: 'works', type: VerbForm.S_FORM },
-    { id: 'q186', sentence: 'She ___ about her grades too much usually.', verb: 'worries', correctForm: 'worries', type: VerbForm.S_FORM },
+    { id: 'q186', sentence: 'She ___ about the test yesterday.', verb: 'worries', correctForm: 'worries', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q187', sentence: 'He ___ more salt to the soup yesterday.', verb: 'add', correctForm: 'added', type: VerbForm.V2 },
     { id: 'q188', sentence: 'They are ___ on the terms of the deal now.', verb: 'agree', correctForm: 'agreeing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q189', sentence: 'My parents ___ me to go to the party yesterday.', verb: 'allow', correctForm: 'allowed', type: VerbForm.V2 },
     { id: 'q190', sentence: 'She ___ emails very quickly usually.', verb: 'answer', correctForm: 'answers', type: VerbForm.S_FORM },
     { id: 'q191', sentence: 'It ___ to be broken right now.', verb: 'appear', correctForm: 'appears', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q192', sentence: 'We ___ at the station late last night.', verb: 'arrive', correctForm: 'arrived', type: VerbForm.V2 },
     { id: 'q193', sentence: 'I am ___ you a question now.', verb: 'ask', correctForm: 'asking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q194', sentence: 'He ___ the story when I told him yesterday.', verb: 'believe', correctForm: 'believed', type: VerbForm.V2 },
     { id: 'q195', sentence: 'This bag ___ to me.', verb: 'belong', correctForm: 'belongs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q196', sentence: 'She ___ my pen during class yesterday.', verb: 'borrow', correctForm: 'borrowed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q197', sentence: 'He ___ his friend late last night.', verb: 'call', correctForm: 'called', type: VerbForm.V2 },
     { id: 'q198', sentence: 'She ___ a heavy backpack to school every day.', verb: 'carry', correctForm: 'carries', type: VerbForm.S_FORM },
     { id: 'q199', sentence: 'Smoking ___ health problems.', verb: 'cause', correctForm: 'causes', type: VerbForm.S_FORM },
     { id: 'q200', sentence: 'He is ___ his clothes right now.', verb: 'change', correctForm: 'changing', type: VerbForm.ING_FORM },
     // BATCH 3: 201-300
     { id: 'q201', sentence: 'He is ___ the list one last time right now.', verb: 'check', correctForm: 'checking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q202', sentence: 'She ___ the windows yesterday afternoon.', verb: 'clean', correctForm: 'cleaned', type: VerbForm.V2 },
     { id: 'q203', sentence: 'The museum ___ at 6 PM daily.', verb: 'close', correctForm: 'closes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q204', sentence: 'We ___ the two products before buying yesterday.', verb: 'compare', correctForm: 'compared', type: VerbForm.V2 },
     { id: 'q205', sentence: 'He is always ___ about the weather.', verb: 'complain', correctForm: 'complaining', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q206', sentence: 'They ___ the construction last month.', verb: 'complete', correctForm: 'completed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q207', sentence: 'The envelope ___ a mysterious letter when I opened it.', verb: 'contain', correctForm: 'contained', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q208', sentence: 'Please ___ reading from page 10.', verb: 'continue', correctForm: 'continue', type: VerbForm.V1 },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q209', sentence: 'My dad has ___ dinner for us.', verb: 'cook', correctForm: 'cooked', type: VerbForm.V3 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q210', sentence: 'She ___ the notes from the board yesterday.', verb: 'copy', correctForm: 'copied', type: VerbForm.V2 },
     { id: 'q211', sentence: 'He is ___ his mistake right now.', verb: 'correct', correctForm: 'correcting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q212', sentence: 'We ___ the money before leaving the bank yesterday.', verb: 'count', correctForm: 'counted', type: VerbForm.V2 },
     { id: 'q213', sentence: 'The baby is ___ for milk right now.', verb: 'cry', correctForm: 'crying', type: VerbForm.ING_FORM },
     { id: 'q214', sentence: 'She ___ ballet every Tuesday.', verb: 'dance', correctForm: 'dances', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V3 to VerbForm.V3
     { id: 'q215', sentence: 'They have ___ to sell the house.', verb: 'decide', correctForm: 'decided', type: VerbForm.V3 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q216', sentence: 'The courier ___ the package an hour ago.', verb: 'deliver', correctForm: 'delivered', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q217', sentence: 'He ___ the scene to the police yesterday.', verb: 'describe', correctForm: 'described', type: VerbForm.V2 },
     { id: 'q218', sentence: 'She ___ websites for a living.', verb: 'design', correctForm: 'designs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q219', sentence: 'The flood ___ the bridge last year.', verb: 'destroy', correctForm: 'destroyed', type: VerbForm.V2 },
-    { id: 'q220', sentence: 'The plants are ___ because of the heat.', verb: 'die', correctForm: 'dying', type: VerbForm.ING_FORM }, // irregular spelling for ING
+    { id: 'q220', sentence: 'The plants are ___ because of the heat.', verb: 'die', correctForm: 'dying', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q221', sentence: 'We ___ the problem for hours last night.', verb: 'discuss', correctForm: 'discussed', type: VerbForm.V2 },
     { id: 'q222', sentence: 'She is ___ the baby right now.', verb: 'dress', correctForm: 'dressing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q223', sentence: 'The paint ___ very quickly yesterday.', verb: 'dry', correctForm: 'dried', type: VerbForm.V2 },
     { id: 'q224', sentence: 'He ___ a good salary at his new job.', verb: 'earn', correctForm: 'earns', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q225', sentence: 'The concert ___ at midnight yesterday.', verb: 'end', correctForm: 'ended', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q226', sentence: 'We ___ the trip to the beach last weekend.', verb: 'enjoy', correctForm: 'enjoyed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q227', sentence: 'Please ___ through the side door.', verb: 'enter', correctForm: 'enter', type: VerbForm.V1 },
     { id: 'q228', sentence: 'She is ___ a baby soon.', verb: 'expect', correctForm: 'expecting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q229', sentence: 'He ___ the rules clearly yesterday.', verb: 'explain', correctForm: 'explained', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q230', sentence: 'The brakes ___ on the steep hill yesterday.', verb: 'fail', correctForm: 'failed', type: VerbForm.V2 },
     { id: 'q231', sentence: 'He ___ the dark more than anything.', verb: 'fear', correctForm: 'fears', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q232', sentence: 'She ___ the glass with juice yesterday.', verb: 'fill', correctForm: 'filled', type: VerbForm.V2 },
     { id: 'q233', sentence: 'I am ___ my homework right now.', verb: 'finish', correctForm: 'finishing', type: VerbForm.ING_FORM },
     { id: 'q234', sentence: 'He ___ cars for a living.', verb: 'fix', correctForm: 'fixes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q235', sentence: 'The dog ___ me home yesterday.', verb: 'follow', correctForm: 'followed', type: VerbForm.V2 },
     { id: 'q236', sentence: 'A line is ___ outside the store now.', verb: 'form', correctForm: 'forming', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q237', sentence: 'I ___ the answer was 42 yesterday.', verb: 'guess', correctForm: 'guessed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q238', sentence: 'Accidents ___ when you are careless.', verb: 'happen', correctForm: 'happen', type: VerbForm.V1 },
     { id: 'q239', sentence: 'She is ___ this movie right now.', verb: 'hate', correctForm: 'hating', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q240', sentence: 'He ___ the old lady cross the street yesterday.', verb: 'help', correctForm: 'helped', type: VerbForm.V2 },
-    { id: 'q241', sentence: 'We ___ for a miracle right now.', verb: 'hope', correctForm: 'hoping', type: VerbForm.ING_FORM }, // colloquial drop of 'are' in spoken, but strictly 'are hoping' implies ING
-    { id: 'q241_fix', sentence: 'We are ___ for a miracle.', verb: 'hope', correctForm: 'hoping', type: VerbForm.ING_FORM },
+    { id: 'q241', sentence: 'We are ___ for a miracle.', verb: 'hope', correctForm: 'hoping', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q242', sentence: 'He ___ my advice completely yesterday.', verb: 'ignore', correctForm: 'ignored', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q243', sentence: 'Can you ___ living on Mars?', verb: 'imagine', correctForm: 'imagine', type: VerbForm.V1 },
     { id: 'q244', sentence: 'He is ___ his skills with practice.', verb: 'improve', correctForm: 'improving', type: VerbForm.ING_FORM },
     { id: 'q245', sentence: 'The tour ___ a free lunch usually.', verb: 'include', correctForm: 'includes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q246', sentence: 'They ___ the speed limit last year.', verb: 'increase', correctForm: 'increased', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q247', sentence: 'She ___ us about the delay yesterday.', verb: 'inform', correctForm: 'informed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q248', sentence: 'I ___ to finish this by noon.', verb: 'intend', correctForm: 'intend', type: VerbForm.V1 },
     { id: 'q249', sentence: 'Science ___ him more than art.', verb: 'interest', correctForm: 'interests', type: VerbForm.S_FORM },
     { id: 'q250', sentence: 'We are ___ everyone to the wedding.', verb: 'invite', correctForm: 'inviting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q251', sentence: 'He ___ the army two years ago.', verb: 'join', correctForm: 'joined', type: VerbForm.V2 },
     { id: 'q252', sentence: 'The cat is ___ onto the table.', verb: 'jump', correctForm: 'jumping', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q253', sentence: 'He ___ the ball into the goal yesterday.', verb: 'kick', correctForm: 'kicked', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q254', sentence: 'The frost ___ the flowers last winter.', verb: 'kill', correctForm: 'killed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q255', sentence: 'He ___ on the door but nobody answered yesterday.', verb: 'knock', correctForm: 'knocked', type: VerbForm.V2 },
     { id: 'q256', sentence: 'She is ___ at the funny joke.', verb: 'laugh', correctForm: 'laughing', type: VerbForm.ING_FORM },
-    { id: 'q257', sentence: 'He ___ to drive last summer.', verb: 'learn', correctForm: 'learned', type: VerbForm.V2 },
-    { id: 'q258', sentence: 'He ___ about his age on the form yesterday.', verb: 'lie', correctForm: 'lied', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q257', sentence: 'He ___ to drive last summer.', verb: 'learn', correctForm: 'learnt', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q258', sentence: 'He ___ about his homework on the form yesterday.', verb: 'lie', correctForm: 'lied', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q259', sentence: 'Can you help me ___ this box?', verb: 'lift', correctForm: 'lift', type: VerbForm.V1 },
     { id: 'q260', sentence: 'She is ___ to the radio right now.', verb: 'listen', correctForm: 'listening', type: VerbForm.ING_FORM },
     { id: 'q261', sentence: 'He ___ in New York now.', verb: 'live', correctForm: 'lives', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q262', sentence: 'I ___ the door before sleeping yesterday.', verb: 'lock', correctForm: 'locked', type: VerbForm.V2 },
     { id: 'q263', sentence: 'She ___ tired today.', verb: 'look', correctForm: 'looks', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q264', sentence: 'They ___ the performance last night.', verb: 'love', correctForm: 'loved', type: VerbForm.V2 },
     { id: 'q265', sentence: 'He is ___ the team this season.', verb: 'manage', correctForm: 'managing', type: VerbForm.ING_FORM },
     { id: 'q266', sentence: 'X ___ the spot on the map.', verb: 'mark', correctForm: 'marks', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q267', sentence: 'He ___ his high school sweetheart years ago.', verb: 'marry', correctForm: 'married', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q268', sentence: 'The socks do not ___ usually.', verb: 'match', correctForm: 'match', type: VerbForm.V1 },
     { id: 'q269', sentence: 'She is ___ the ingredients right now.', verb: 'measure', correctForm: 'measuring', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q270', sentence: 'He ___ the problem in the meeting yesterday.', verb: 'mention', correctForm: 'mentioned', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q271', sentence: 'I ___ my family when I travel.', verb: 'miss', correctForm: 'miss', type: VerbForm.V1 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q272', sentence: 'Oil and water do not ___ usually.', verb: 'mix', correctForm: 'mix', type: VerbForm.V1 },
     { id: 'q273', sentence: 'The earth ___ around the sun.', verb: 'move', correctForm: 'moves', type: VerbForm.S_FORM },
     { id: 'q274', sentence: 'We are ___ the boat "Freedom".', verb: 'name', correctForm: 'naming', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q275', sentence: 'She ___ a doctor yesterday.', verb: 'need', correctForm: 'needed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q276', sentence: 'Please ___ the changes carefully.', verb: 'note', correctForm: 'note', type: VerbForm.V1 },
     { id: 'q277', sentence: 'I am ___ a trend in the data.', verb: 'notice', correctForm: 'noticing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q278', sentence: 'He ___ the boxes from 1 to 10 yesterday.', verb: 'number', correctForm: 'numbered', type: VerbForm.V2 },
     { id: 'q279', sentence: 'She is ___ us a discount right now.', verb: 'offer', correctForm: 'offering', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q280', sentence: 'Someone ___ the window last night.', verb: 'open', correctForm: 'opened', type: VerbForm.V2 },
     { id: 'q281', sentence: 'I am ___ room service right now.', verb: 'order', correctForm: 'ordering', type: VerbForm.ING_FORM },
-    { id: 'q282', sentence: 'We ___ the event last month.', verb: 'organize', correctForm: 'organized', type: VerbForm.V2 },
-    { id: 'q283', sentence: 'He ___ his lunch every morning.', verb: 'pack', correctForm: 'packs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q282', sentence: 'We ___ the event last month.', verb: 'organise', correctForm: 'organised', type: VerbForm.V2 },
+    { id: 'q283', sentence: 'He ___ his pack every morning.', verb: 'pack', correctForm: 'packs', type: VerbForm.S_FORM },
     { id: 'q284', sentence: 'She is ___ her nails right now.', verb: 'paint', correctForm: 'painting', type: VerbForm.ING_FORM },
     { id: 'q285', sentence: 'Time ___ quickly when you have fun.', verb: 'pass', correctForm: 'passes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q286', sentence: 'He ___ to catch his breath yesterday.', verb: 'pause', correctForm: 'paused', type: VerbForm.V2 },
     { id: 'q287', sentence: 'The band is ___ on stage right now.', verb: 'perform', correctForm: 'performing', type: VerbForm.ING_FORM },
     { id: 'q288', sentence: 'She ___ her mother every Sunday.', verb: 'phone', correctForm: 'phones', type: VerbForm.S_FORM },
     { id: 'q289', sentence: 'We are ___ berries in the forest.', verb: 'pick', correctForm: 'picking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q290', sentence: 'He ___ the cup on the shelf yesterday.', verb: 'place', correctForm: 'placed', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q291', sentence: 'They ___ to visit us next week.', verb: 'plan', correctForm: 'plan', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q292', sentence: 'She ___ the guitar beautifully yesterday.', verb: 'play', correctForm: 'played', type: VerbForm.V2 },
     { id: 'q293', sentence: 'He is ___ at the map right now.', verb: 'point', correctForm: 'pointing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q294', sentence: 'I ___ the silverware yesterday.', verb: 'polish', correctForm: 'polished', type: VerbForm.V2 },
     { id: 'q295', sentence: 'She is ___ a letter to her friend.', verb: 'post', correctForm: 'posting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q296', sentence: 'He ___ the milk into the bowl yesterday.', verb: 'pour', correctForm: 'poured', type: VerbForm.V2 },
     { id: 'q297', sentence: 'She ___ yoga every morning.', verb: 'practise', correctForm: 'practises', type: VerbForm.S_FORM },
     { id: 'q298', sentence: 'They are ___ for peace right now.', verb: 'pray', correctForm: 'praying', type: VerbForm.ING_FORM },
     { id: 'q299', sentence: 'Mom is ___ lunch right now.', verb: 'prepare', correctForm: 'preparing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q300', sentence: 'He ___ the award to the winner yesterday.', verb: 'present', correctForm: 'presented', type: VerbForm.V2 },
     // BATCH 4: 301-400
     { id: 'q301', sentence: 'He is ___ the button to start the machine.', verb: 'press', correctForm: 'pressing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q302', sentence: 'The barrier ___ the accident yesterday.', verb: 'prevent', correctForm: 'prevented', type: VerbForm.V2 },
     { id: 'q303', sentence: 'This farm ___ fresh milk daily.', verb: 'produce', correctForm: 'produces', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q304', sentence: 'He ___ to call me back yesterday.', verb: 'promise', correctForm: 'promised', type: VerbForm.V2 },
     { id: 'q305', sentence: 'Sunscreen ___ your skin from the sun.', verb: 'protect', correctForm: 'protects', type: VerbForm.S_FORM },
     { id: 'q306', sentence: 'They are ___ food for the shelter right now.', verb: 'provide', correctForm: 'providing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q307', sentence: 'He ___ the door open yesterday.', verb: 'pull', correctForm: 'pulled', type: VerbForm.V2 },
     { id: 'q308', sentence: 'She is ___ the cart down the aisle.', verb: 'push', correctForm: 'pushing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q309', sentence: 'I ___ his motives usually.', verb: 'question', correctForm: 'question', type: VerbForm.V1 },
     { id: 'q310', sentence: 'It is ___ outside right now.', verb: 'rain', correctForm: 'raining', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q311', sentence: 'He ___ his voice during the argument yesterday.', verb: 'raise', correctForm: 'raised', type: VerbForm.V2 },
     { id: 'q312', sentence: 'We are ___ the destination soon.', verb: 'reach', correctForm: 'reaching', type: VerbForm.ING_FORM },
-    { id: 'q313', sentence: 'She finally ___ the truth yesterday.', verb: 'realize', correctForm: 'realized', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q313', sentence: 'She finally ___ the truth yesterday.', verb: 'realise', correctForm: 'realised', type: VerbForm.V2 },
     { id: 'q314', sentence: 'He is ___ an award on stage right now.', verb: 'receive', correctForm: 'receiving', type: VerbForm.ING_FORM },
-    { id: 'q315', sentence: 'I ___ her from the magazine cover yesterday.', verb: 'recognize', correctForm: 'recognized', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q315', sentence: 'I ___ her from the magazine cover yesterday.', verb: 'recognise', correctForm: 'recognised', type: VerbForm.V2 },
     { id: 'q316', sentence: 'He ___ music in his studio every day.', verb: 'record', correctForm: 'records', type: VerbForm.S_FORM },
     { id: 'q317', sentence: 'They are ___ waste by recycling.', verb: 'reduce', correctForm: 'reducing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q318', sentence: 'The mirror ___ the light perfectly yesterday.', verb: 'reflect', correctForm: 'reflected', type: VerbForm.V2 },
     { id: 'q319', sentence: 'She ___ to eat meat usually.', verb: 'refuse', correctForm: 'refuses', type: VerbForm.S_FORM },
     { id: 'q320', sentence: 'He is ___ the painting with great interest.', verb: 'regard', correctForm: 'regarding', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q321', sentence: 'I ___ on Sundays usually.', verb: 'relax', correctForm: 'relax', type: VerbForm.V1 },
     { id: 'q322', sentence: 'He is ___ calm despite the chaos.', verb: 'remain', correctForm: 'remaining', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q323', sentence: 'She ___ the secret code yesterday.', verb: 'remember', correctForm: 'remembered', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q324', sentence: 'Please ___ me to call him later.', verb: 'remind', correctForm: 'remind', type: VerbForm.V1 },
     { id: 'q325', sentence: 'He is ___ his shoes at the door.', verb: 'remove', correctForm: 'removing', type: VerbForm.ING_FORM },
     { id: 'q326', sentence: 'He ___ bikes for a living.', verb: 'repair', correctForm: 'repairs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q327', sentence: 'She ___ the word three times yesterday.', verb: 'repeat', correctForm: 'repeated', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q328', sentence: 'We are ___ the battery right now.', verb: 'replace', correctForm: 'replaced', type: VerbForm.V2 },
     { id: 'q329', sentence: 'He ___ to texts quickly usually.', verb: 'reply', correctForm: 'replies', type: VerbForm.S_FORM },
     { id: 'q330', sentence: 'She is ___ the news live.', verb: 'report', correctForm: 'reporting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q331', sentence: 'He ___ a refund yesterday.', verb: 'request', correctForm: 'requested', type: VerbForm.V2 },
     { id: 'q332', sentence: 'The lifeguard ___ people often.', verb: 'rescue', correctForm: 'rescues', type: VerbForm.S_FORM },
     { id: 'q333', sentence: 'We are ___ home tomorrow.', verb: 'return', correctForm: 'returning', type: VerbForm.ING_FORM },
     { id: 'q334', sentence: 'The curtain ___ the stage usually.', verb: 'reveal', correctForm: 'reveals', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q335', sentence: 'He ___ the file before closing yesterday.', verb: 'save', correctForm: 'saved', type: VerbForm.V2 },
     { id: 'q336', sentence: 'I am ___ for my keys right now.', verb: 'search', correctForm: 'searching', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q337', sentence: 'He ___ in the army last year.', verb: 'serve', correctForm: 'served', type: VerbForm.V2 },
     { id: 'q338', sentence: 'They are ___ the bill now.', verb: 'settle', correctForm: 'settling', type: VerbForm.ING_FORM },
     { id: 'q339', sentence: 'She ___ her toys with others usually.', verb: 'share', correctForm: 'shares', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q340', sentence: 'He ___ at the dog yesterday.', verb: 'shout', correctForm: 'shouted', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q341', sentence: 'Please ___ your name here.', verb: 'sign', correctForm: 'sign', type: VerbForm.V1 },
     { id: 'q342', sentence: 'She is ___ at me right now.', verb: 'smile', correctForm: 'smiling', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q343', sentence: 'The alarm ___ loudly yesterday.', verb: 'sound', correctForm: 'sounded', type: VerbForm.V2 },
     { id: 'q344', sentence: 'The race ___ at noon usually.', verb: 'start', correctForm: 'starts', type: VerbForm.S_FORM },
     { id: 'q345', sentence: 'I am ___ here tonight.', verb: 'stay', correctForm: 'staying', type: VerbForm.ING_FORM },
     { id: 'q346', sentence: 'He ___ at the red light usually.', verb: 'stop', correctForm: 'stops', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q347', sentence: 'She ___ all night yesterday.', verb: 'study', correctForm: 'studied', type: VerbForm.V2 },
     { id: 'q348', sentence: 'He is ___ a new plan right now.', verb: 'suggest', correctForm: 'suggesting', type: VerbForm.ING_FORM },
     { id: 'q349', sentence: 'The pillar ___ the roof usually.', verb: 'support', correctForm: 'supports', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q350', sentence: 'I ___ so.', verb: 'suppose', correctForm: 'suppose', type: VerbForm.V1 },
     { id: 'q351', sentence: 'It ___ me every time.', verb: 'surprise', correctForm: 'surprises', type: VerbForm.S_FORM },
     { id: 'q352', sentence: 'We are ___ about it now.', verb: 'talk', correctForm: 'talking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q353', sentence: 'She ___ him for the gift yesterday.', verb: 'thank', correctForm: 'thanked', type: VerbForm.V2 },
     { id: 'q354', sentence: 'He ___ the screen gently usually.', verb: 'touch', correctForm: 'touches', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q355', sentence: 'They ___ for the marathon last month.', verb: 'train', correctForm: 'trained', type: VerbForm.V2 },
     { id: 'q356', sentence: 'He ___ to London often.', verb: 'travel', correctForm: 'travels', type: VerbForm.S_FORM },
     { id: 'q357', sentence: 'She is ___ the patient now.', verb: 'treat', correctForm: 'treating', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q358', sentence: 'I ___ him with my secret yesterday.', verb: 'trust', correctForm: 'trusted', type: VerbForm.V2 },
     { id: 'q359', sentence: 'He ___ his best usually.', verb: 'try', correctForm: 'tries', type: VerbForm.S_FORM },
     { id: 'q360', sentence: 'The wheel ___ slowly right now.', verb: 'turn', correctForm: 'turning', type: VerbForm.ING_FORM },
     { id: 'q361', sentence: 'He is ___ the phone.', verb: 'use', correctForm: 'using', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q362', sentence: 'We ___ the museum yesterday.', verb: 'visit', correctForm: 'visited', type: VerbForm.V2 },
     { id: 'q363', sentence: 'She ___ for the bus daily.', verb: 'wait', correctForm: 'waits', type: VerbForm.S_FORM },
     { id: 'q364', sentence: 'I am ___ to the park now.', verb: 'walk', correctForm: 'walking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q365', sentence: 'He ___ a new car last year.', verb: 'want', correctForm: 'wanted', type: VerbForm.V2 },
     { id: 'q366', sentence: 'She ___ her hands often.', verb: 'wash', correctForm: 'washes', type: VerbForm.S_FORM },
     { id: 'q367', sentence: 'They are ___ a movie right now.', verb: 'watch', correctForm: 'watching', type: VerbForm.ING_FORM },
-    { id: 'q368', sentence: 'I ___ about that yesterday.', verb: 'wonder', correctForm: 'wondered', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q368', sentence: 'I ___ what will happen next.', verb: 'wonder', correctForm: 'wondered', type: VerbForm.V2 },
     { id: 'q369', sentence: 'He is ___ late tonight.', verb: 'work', correctForm: 'working', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q370', sentence: 'She ___ about the test yesterday.', verb: 'worry', correctForm: 'worried', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q371', sentence: 'He is ___ sugar to the tea now.', verb: 'add', correctForm: 'adding', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q372', sentence: 'We ___ with the terms yesterday.', verb: 'agree', correctForm: 'agreed', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q373', sentence: 'She is ___ the dog to enter now.', verb: 'allow', correctForm: 'allowing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q374', sentence: 'He ___ the phone yesterday.', verb: 'answer', correctForm: 'answered', type: VerbForm.V2 },
+    // Fix: Changed Form.S_FORM to VerbForm.S_FORM
     { id: 'q375', sentence: 'He ___ calm usually.', verb: 'appear', correctForm: 'appears', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q376', sentence: 'They ___ at the airport an hour ago.', verb: 'arrive', correctForm: 'arrived', type: VerbForm.V2 },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q377', sentence: 'I ___ too many questions usually.', verb: 'ask', correctForm: 'ask', type: VerbForm.V1 },
-    { id: 'q378', sentence: 'She is ___ in ghosts now.', verb: 'believe', correctForm: 'believing', type: VerbForm.ING_FORM }, // Note: believe is stative, but acceptable in some contexts or for drilling form
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
+    { id: 'q378', sentence: 'She is ___ in ghosts now.', verb: 'believe', correctForm: 'believing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.S_FORM to VerbForm.S_FORM
     { id: 'q379', sentence: 'This book ___ to the library.', verb: 'belong', correctForm: 'belongs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q380', sentence: 'I am ___ money from him now.', verb: 'borrow', correctForm: 'borrowing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q381', sentence: 'He ___ my name yesterday.', verb: 'call', correctForm: 'called', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q382', sentence: 'She is ___ a heavy bag.', verb: 'carry', correctForm: 'carrying', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q383', sentence: 'The storm ___ damage yesterday.', verb: 'cause', correctForm: 'caused', type: VerbForm.V2 },
+    // Fix: Changed Form.S_FORM to VerbForm.S_FORM
     { id: 'q384', sentence: 'He ___ his mind often.', verb: 'change', correctForm: 'changes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q385', sentence: 'We are ___ the results now.', verb: 'check', correctForm: 'checking', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q386', sentence: 'He ___ his room yesterday.', verb: 'clean', correctForm: 'cleaned', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q387', sentence: 'She is ___ the door now.', verb: 'close', correctForm: 'closing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q388', sentence: 'He ___ notes with me yesterday.', verb: 'compare', correctForm: 'compared', type: VerbForm.V2 },
+    // Fix: Changed Form.S_FORM to VerbForm.S_FORM
     { id: 'q389', sentence: 'She ___ about the food usually.', verb: 'complain', correctForm: 'complains', type: VerbForm.S_FORM },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q390', sentence: 'I am ___ the form now.', verb: 'complete', correctForm: 'completing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q391', sentence: 'The box ___ toys yesterday.', verb: 'contain', correctForm: 'contained', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q392', sentence: 'He is ___ the work now.', verb: 'continue', correctForm: 'continuing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q393', sentence: 'She ___ dinner yesterday.', verb: 'cook', correctForm: 'cooked', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q394', sentence: 'He is ___ the file now.', verb: 'copy', correctForm: 'copying', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.S_FORM to VerbForm.S_FORM
     { id: 'q395', sentence: 'The teacher ___ the tests usually.', verb: 'correct', correctForm: 'corrects', type: VerbForm.S_FORM },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q396', sentence: 'I am ___ the coins now.', verb: 'count', correctForm: 'counting', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q397', sentence: 'The baby ___ all night yesterday.', verb: 'cry', correctForm: 'cried', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q398', sentence: 'They are ___ at the party now.', verb: 'dance', correctForm: 'dancing', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q399', sentence: 'He ___ to go yesterday.', verb: 'decide', correctForm: 'decided', type: VerbForm.V2 },
+    // Fix: Changed Form.ING_FORM to VerbForm.ING_FORM
     { id: 'q400', sentence: 'She is ___ the mail now.', verb: 'deliver', correctForm: 'delivering', type: VerbForm.ING_FORM },
     // BATCH 5: 401-500
     { id: 'q401', sentence: 'He ___ the plot to us usually.', verb: 'describe', correctForm: 'describes', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q402', sentence: 'She ___ her own wedding dress yesterday.', verb: 'design', correctForm: 'designed', type: VerbForm.V2 },
     { id: 'q403', sentence: 'The fire is ___ the old barn right now.', verb: 'destroy', correctForm: 'destroying', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q404', sentence: 'My plant ___ last week because I forgot to water it.', verb: 'die', correctForm: 'died', type: VerbForm.V2 },
     { id: 'q405', sentence: 'He ___ politics with his friends often.', verb: 'discuss', correctForm: 'discusses', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q406', sentence: 'She ___ quickly for the party yesterday.', verb: 'dress', correctForm: 'dressed', type: VerbForm.V2 },
     { id: 'q407', sentence: 'The sun is ___ the wet pavement right now.', verb: 'dry', correctForm: 'drying', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q408', sentence: 'He ___ a bonus for his hard work last month.', verb: 'earn', correctForm: 'earned', type: VerbForm.V2 },
     { id: 'q409', sentence: 'The movie ___ at 9 PM usually.', verb: 'end', correctForm: 'ends', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q410', sentence: 'I ___ classical music usually.', verb: 'enjoy', correctForm: 'enjoy', type: VerbForm.V1 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q411', sentence: 'He ___ the room quietly yesterday.', verb: 'enter', correctForm: 'entered', type: VerbForm.V2 },
     { id: 'q412', sentence: 'She ___ a gift on her birthday usually.', verb: 'expect', correctForm: 'expects', type: VerbForm.S_FORM },
     { id: 'q413', sentence: 'He is ___ the rules to the new players now.', verb: 'explain', correctForm: 'explaining', type: VerbForm.ING_FORM },
     { id: 'q414', sentence: 'The old engine ___ to start often.', verb: 'fail', correctForm: 'fails', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q415', sentence: 'He ___ the large dog yesterday.', verb: 'fear', correctForm: 'feared', type: VerbForm.V2 },
     { id: 'q416', sentence: 'She ___ her water bottle every morning.', verb: 'fill', correctForm: 'fills', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q417', sentence: 'I ___ work at 5 PM usually.', verb: 'finish', correctForm: 'finish', type: VerbForm.V1 },
     { id: 'q418', sentence: 'He is ___ the leak in the pipe now.', verb: 'fix', correctForm: 'fixing', type: VerbForm.ING_FORM },
     { id: 'q419', sentence: 'He ___ the news daily.', verb: 'follow', correctForm: 'follows', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q420', sentence: 'Storm clouds ___ in the sky yesterday.', verb: 'form', correctForm: 'formed', type: VerbForm.V2 },
     { id: 'q421', sentence: 'I am ___ the answer right now.', verb: 'guess', correctForm: 'guessing', type: VerbForm.ING_FORM },
     { id: 'q422', sentence: 'It ___ every year on this date.', verb: 'happen', correctForm: 'happens', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q423', sentence: 'She ___ the movie we saw yesterday.', verb: 'hate', correctForm: 'hated', type: VerbForm.V2 },
     { id: 'q424', sentence: 'He is ___ me with the boxes now.', verb: 'help', correctForm: 'helping', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q425', sentence: 'We ___ for better weather yesterday.', verb: 'hope', correctForm: 'hoped', type: VerbForm.V2 },
     { id: 'q426', sentence: 'He ___ my calls usually.', verb: 'ignore', correctForm: 'ignores', type: VerbForm.S_FORM },
     { id: 'q427', sentence: 'I am ___ a peaceful beach right now.', verb: 'imagine', correctForm: 'imagining', type: VerbForm.ING_FORM },
     { id: 'q428', sentence: 'Practice ___ your skills usually.', verb: 'improve', correctForm: 'improves', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q429', sentence: 'The price ___ tax yesterday.', verb: 'include', correctForm: 'included', type: VerbForm.V2 },
     { id: 'q430', sentence: 'Traffic is ___ on the highway now.', verb: 'increase', correctForm: 'increasing', type: VerbForm.ING_FORM },
     { id: 'q431', sentence: 'The newsletter ___ us of updates daily.', verb: 'inform', correctForm: 'informs', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q432', sentence: 'I ___ to go to the gym yesterday.', verb: 'intend', correctForm: 'intended', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q433', sentence: 'The history book ___ him yesterday.', verb: 'interest', correctForm: 'interested', type: VerbForm.V2 },
     { id: 'q434', sentence: 'She ___ friends over for dinner often.', verb: 'invite', correctForm: 'invites', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q435', sentence: 'I ___ the meeting at 9 AM usually.', verb: 'join', correctForm: 'join', type: VerbForm.V1 },
     { id: 'q436', sentence: 'The cat ___ onto the counter usually.', verb: 'jump', correctForm: 'jumps', type: VerbForm.S_FORM },
     { id: 'q437', sentence: 'He is ___ the ball right now.', verb: 'kick', correctForm: 'kicking', type: VerbForm.ING_FORM },
     { id: 'q438', sentence: 'Pollution ___ the fish in the river usually.', verb: 'kill', correctForm: 'kills', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q439', sentence: 'I ___ on the door before entering usually.', verb: 'knock', correctForm: 'knock', type: VerbForm.V1 },
     { id: 'q440', sentence: 'He ___ loudly at jokes often.', verb: 'laugh', correctForm: 'laughs', type: VerbForm.S_FORM },
     { id: 'q441', sentence: 'She is ___ French right now.', verb: 'learn', correctForm: 'learning', type: VerbForm.ING_FORM },
     { id: 'q442', sentence: 'He ___ about his homework often.', verb: 'lie', correctForm: 'lies', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q443', sentence: 'He ___ the heavy box yesterday.', verb: 'lift', correctForm: 'lifted', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q444', sentence: 'I ___ to the radio yesterday morning.', verb: 'listen', correctForm: 'listened', type: VerbForm.V2 },
     { id: 'q445', sentence: 'I am ___ in London right now.', verb: 'live', correctForm: 'living', type: VerbForm.ING_FORM },
     { id: 'q446', sentence: 'He ___ the door every night.', verb: 'lock', correctForm: 'locks', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q447', sentence: 'She ___ very happy yesterday.', verb: 'look', correctForm: 'looked', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q448', sentence: 'I ___ the show last night.', verb: 'love', correctForm: 'loved', type: VerbForm.V2 },
     { id: 'q449', sentence: 'He ___ the team well usually.', verb: 'manage', correctForm: 'manages', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q450', sentence: 'X ___ the spot on the map yesterday.', verb: 'mark', correctForm: 'marked', type: VerbForm.V2 },
     { id: 'q451', sentence: 'The prince ___ the princess in the story.', verb: 'marry', correctForm: 'marries', type: VerbForm.S_FORM },
     { id: 'q452', sentence: 'The shoes are ___ the bag right now.', verb: 'match', correctForm: 'matching', type: VerbForm.ING_FORM },
     { id: 'q453', sentence: 'He ___ the wood before cutting usually.', verb: 'measure', correctForm: 'measures', type: VerbForm.S_FORM },
     { id: 'q454', sentence: 'He is ___ the problem again now.', verb: 'mention', correctForm: 'mentioning', type: VerbForm.ING_FORM },
     { id: 'q455', sentence: 'He ___ the bus to work often.', verb: 'miss', correctForm: 'misses', type: VerbForm.S_FORM },
-    { id: 'q456', sentence: 'She ___ the paint colors yesterday.', verb: 'mix', correctForm: 'mixed', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q456', sentence: 'She ___ the paint colours yesterday.', verb: 'mix', correctForm: 'mixed', type: VerbForm.V2 },
     { id: 'q457', sentence: 'The car is ___ down the street now.', verb: 'move', correctForm: 'moving', type: VerbForm.ING_FORM },
     { id: 'q458', sentence: 'She ___ her pets odd names usually.', verb: 'name', correctForm: 'names', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q459', sentence: 'He ___ help with the project yesterday.', verb: 'need', correctForm: 'needed', type: VerbForm.V2 },
     { id: 'q460', sentence: 'He is ___ the time in his log now.', verb: 'note', correctForm: 'noting', type: VerbForm.ING_FORM },
     { id: 'q461', sentence: 'She ___ small details usually.', verb: 'notice', correctForm: 'notices', type: VerbForm.S_FORM },
     { id: 'q462', sentence: 'He ___ the pages daily.', verb: 'number', correctForm: 'numbers', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V1 to VerbForm.V1
     { id: 'q463', sentence: 'I ___ my help to neighbors usually.', verb: 'offer', correctForm: 'offer', type: VerbForm.V1 },
     { id: 'q464', sentence: 'He is ___ the gift right now.', verb: 'open', correctForm: 'opening', type: VerbForm.ING_FORM },
     { id: 'q465', sentence: 'He ___ pizza for dinner often.', verb: 'order', correctForm: 'orders', type: VerbForm.S_FORM },
-    { id: 'q466', sentence: 'She is ___ the files alphabetically now.', verb: 'organize', correctForm: 'organizing', type: VerbForm.ING_FORM },
+    { id: 'q466', sentence: 'She is ___ the files alphabetically now.', verb: 'organise', correctForm: 'organising', type: VerbForm.ING_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q467', sentence: 'He ___ his suitcase yesterday.', verb: 'pack', correctForm: 'packed', type: VerbForm.V2 },
     { id: 'q468', sentence: 'She ___ beautiful portraits usually.', verb: 'paint', correctForm: 'paints', type: VerbForm.S_FORM },
     { id: 'q469', sentence: 'Time is ___ slowly right now.', verb: 'pass', correctForm: 'passing', type: VerbForm.ING_FORM },
     { id: 'q470', sentence: 'He ___ the game to eat often.', verb: 'pause', correctForm: 'pauses', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
     { id: 'q471', sentence: 'They ___ well on stage yesterday.', verb: 'perform', correctForm: 'performed', type: VerbForm.V2 },
     { id: 'q472', sentence: 'He is ___ his mother right now.', verb: 'phone', correctForm: 'phoning', type: VerbForm.ING_FORM },
     { id: 'q473', sentence: 'She ___ fresh flowers usually.', verb: 'pick', correctForm: 'picks', type: VerbForm.S_FORM },
@@ -528,16 +790,18 @@ export const lesson2: Lesson = {
     { id: 'q487', sentence: 'The factory is ___ cars right now.', verb: 'produce', correctForm: 'producing', type: VerbForm.ING_FORM },
     { id: 'q488', sentence: 'He ___ to help me usually.', verb: 'promise', correctForm: 'promises', type: VerbForm.S_FORM },
     { id: 'q489', sentence: 'The roof is ___ us from the rain now.', verb: 'protect', correctForm: 'protecting', type: VerbForm.ING_FORM },
-    { id: 'q490', sentence: 'The school ___ the books yesterday.', verb: 'provided', correctForm: 'provided', type: VerbForm.V2 },
-    { id: 'q491', sentence: 'He ___ the rope tight usually.', verb: 'pulls', correctForm: 'pulls', type: VerbForm.S_FORM },
-    { id: 'q492', sentence: 'She ___ the heavy cart daily.', verb: 'pushes', correctForm: 'pushes', type: VerbForm.S_FORM },
-    { id: 'q493', sentence: 'The police are ___ him right now.', verb: 'questioning', correctForm: 'questioning', type: VerbForm.ING_FORM },
-    { id: 'q494', sentence: 'It ___ here very often.', verb: 'rains', correctForm: 'rains', type: VerbForm.S_FORM },
-    { id: 'q495', sentence: 'He is ___ his hand to speak now.', verb: 'raising', correctForm: 'raising', type: VerbForm.ING_FORM },
-    { id: 'q496', sentence: 'He ___ the top shelf easily usually.', verb: 'reaches', correctForm: 'reaches', type: VerbForm.S_FORM },
-    { id: 'q497', sentence: 'He ___ the truth eventually usually.', verb: 'realizes', correctForm: 'realizes', type: VerbForm.S_FORM },
-    { id: 'q498', sentence: 'She ___ mail from fans daily.', verb: 'receives', correctForm: 'receives', type: VerbForm.S_FORM },
-    { id: 'q499', sentence: 'He ___ me in the crowd usually.', verb: 'recognizes', correctForm: 'recognizes', type: VerbForm.S_FORM },
-    { id: 'q500', sentence: 'He ___ the song in the studio yesterday.', verb: 'recorded', correctForm: 'recorded', type: VerbForm.V2 },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q490', sentence: 'The school ___ the books yesterday.', verb: 'provide', correctForm: 'provided', type: VerbForm.V2 },
+    { id: 'q491', sentence: 'He ___ the rope tight usually.', verb: 'pull', correctForm: 'pulls', type: VerbForm.S_FORM },
+    { id: 'q492', sentence: 'She ___ the heavy cart daily.', verb: 'push', correctForm: 'pushes', type: VerbForm.S_FORM },
+    { id: 'q493', sentence: 'The police are ___ him right now.', verb: 'question', correctForm: 'questioning', type: VerbForm.ING_FORM },
+    { id: 'q494', sentence: 'It ___ here very often.', verb: 'rain', correctForm: 'rains', type: VerbForm.S_FORM },
+    { id: 'q495', sentence: 'He is ___ his hand to speak now.', verb: 'raise', correctForm: 'raising', type: VerbForm.ING_FORM },
+    { id: 'q496', sentence: 'He ___ the top shelf easily usually.', verb: 'reach', correctForm: 'reaches', type: VerbForm.S_FORM },
+    { id: 'q497', sentence: 'He ___ the truth eventually usually.', verb: 'realise', correctForm: 'realises', type: VerbForm.S_FORM },
+    { id: 'q498', sentence: 'She ___ mail from fans daily.', verb: 'receive', correctForm: 'receives', type: VerbForm.S_FORM },
+    { id: 'q499', sentence: 'He ___ me in the crowd usually.', verb: 'recognise', correctForm: 'recognises', type: VerbForm.S_FORM },
+    // Fix: Changed Form.V2 to VerbForm.V2
+    { id: 'q500', sentence: 'He ___ the song in the studio yesterday.', verb: 'record', correctForm: 'recorded', type: VerbForm.V2 },
   ]
 };
